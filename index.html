@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	<form id="frm1">
+		<strong>Nombre: </strong><input type="text" name="name" id="name"><br><br>
+		<strong>Mail: </strong><input type="text" name="email" id="email"><br><br>
+	</form>
+	<button onclick="myFunction()">Mostrar</button>
+
+	<p id="mostrarNombre"></p>
+	<p id="mostrarMail"></p>
+
+	<script>
+		function myFunction() {
+			var name=document.getElementById("name");
+			var email=document.getElementById("email");
+			mostrarNombre.innerHTML="<strong>Datos Ingresados </br></br><li>Nombre</strong> : "+ name.value+"</li>";
+			mostrarMail.innerHTML="<li><strong>Email</strong> :" + email.value+"</li>";
+		}
+	</script>
+</body>
+</html>
